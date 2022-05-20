@@ -1,0 +1,19 @@
+<div class="home-page">
+    <div style="display: block;">
+        <div class="export-btn">
+          <button (click)="downloadPDF()">
+            Export Chart to PDF
+          </button>
+        </div>
+        <canvas 
+          id="cool-canvas"
+          baseChart 
+          [datasets]="barChartData"
+          [labels]="barChartLabels"
+          [options]="barChartOptions"
+          [plugins]="barChartPlugins"
+          [legend]="barChartLegend"
+          >
+        </canvas>
+      </div>
+</div>
